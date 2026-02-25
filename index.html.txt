@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <title>School Attendance System</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+</head>
+<body>
+
+  <h1>📚 Nidaamka Xadirinta Ardayda</h1>
+
+  <div class="box">
+    <h2>Diiwaangelinta Ardayga</h2>
+    <input type="number" id="number" placeholder="Lambarka (1,2,3...)" />
+    <input type="text" id="name" placeholder="Magaca Ardayga" />
+    <button onclick="addStudent()">Ku dar</button>
+  </div>
+
+  <div class="box">
+    <h2>Xadirinta Maanta</h2>
+    <p id="today"></p>
+    <div id="students"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
